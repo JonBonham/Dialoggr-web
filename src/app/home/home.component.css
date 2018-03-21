@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+button {
+    font-size: 20px;
+}
+
+mat-sidenav {
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+

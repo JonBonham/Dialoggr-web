@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+    <span><button mat-button [matMenuTriggerFor]="menu">Menu</button></span>
+    <span class="example-spacer"></span>
+    <span><button style="float: right;" mat-button *ngIf="auth.isAuthenticated()"
+        (click)="auth.logout()">Logout</button></span>       
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/home">
+        <span>Home</span>
+    </button>
+    <button mat-menu-item routerLink="/data">
+        <span>Data</span>
+    </button>
+    <button mat-menu-item routerLink="/settings">
+        <span>Settings</span>
+    </button>
+</mat-menu>
+
+<div style="text-align:center">
+    <h1>
+        Welcome to Settings!
+    </h1>
+    <img width="500" src="C:/Users/Jeb/Documents/GitHub/dialoggr-web/src/favicon.png">
+</div>
+    
+

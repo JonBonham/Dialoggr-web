@@ -1,0 +1,18 @@
+<mat-toolbar color="primary"></mat-toolbar>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to Dialoggr!
+  </h1>
+  <img width="500"  src="C:/Users/Jeb/Documents/GitHub/dialoggr-web/src/favicon.png">
+  <body>
+    Dialoggr is a Type I Diabetes management app that was designed to allow the user to track and log their symptoms in an 
+    easy-to-use manner. Click the button below to sign in or register!
+  </body>
+ 
+  <div>
+    <button mat-raised-button style="text-align:center" class="mat-primary" *ngIf="!auth.isAuthenticated()" 
+    (click)="auth.login()">Get Started</button>    
+  </div>
+
+</div>
